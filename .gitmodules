@@ -13,3 +13,6 @@
 [submodule "dependencies/freetype"]
 	path = dependencies/freetype
 	url = git://github.com/Kanma/FreeType.git
+[submodule "dependencies/libRocket"]
+	path = dependencies/libRocket
+	url = git://github.com/Kanma/libRocket.git
