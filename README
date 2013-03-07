@@ -1,0 +1,90 @@
+********************************************************************************
+*                                                                              *
+*                                  Athena-GUI                                  *
+*                              Version 1.0.0 (Dev)                             *
+*                       http://github.com/Kanma/Athena-GUI                     *
+*                                                                              *
+********************************************************************************
+
+
+---------------------------------------
+- Summary
+---------------------------------------
+
+Athena-GUI is one of the modules of the Athena Game Framework, in the form of a
+library written in C++.
+
+This module provides all the necessary tools to implement an in-game GUI based
+on HTML CSS and (optionally) JavaScript files. It is based on the libRocket
+library (http://http://librocket.com).
+
+This module can be used as a standalone library, or combined with the rest of
+the Athena Game Framework (http://github.com/Kanma/Athena-Framework).
+
+The use of this module is optional, you can choose to implement your own
+GUI solution instead, or to not use one at all.
+
+Additionally, when the Athena-Scripting (http://github.com/Kanma/Athena-Scripting)
+module is built alongside this one, Athena-GUI will be usable from JavaScript.
+
+
+---------------------------------------
+- Dependencies
+---------------------------------------
+
+Athena-GUI requires the following dependencies:
+
+   - XMake
+   - Athena-Math
+   - Athena-Core
+   - FreeType
+   - libRocket
+   - UnitTest++
+
+They are provided as GIT submodules of this repository and will be compiled
+automatically during the compilation of Athena-GUI.
+
+To download them, do:
+
+    somewhere$ cd <path/to/the/source/of/Athena-GUI>
+    Athena-GUI$ git submodule init
+    Athena-GUI$ git submodule update
+
+
+---------------------------------------
+- Compilation
+---------------------------------------
+
+(Note: you'll need to install CMake to compile Athena-GUI)
+
+To compile Athena-GUI (and all its dependencies), do:
+
+    somewhere$ mkdir build
+    somewhere$ cd build
+    build$ cmake <path/to/the/source/of/Athena-GUI>
+    build$ make
+
+The library will be put in build/bin/
+
+
+---------------------------------------
+- License
+---------------------------------------
+
+Athena-GUI is is made available under the MIT License. The text of the license
+is in the file 'LICENSE'.
+
+Under the MIT License you may use Athena-Scripting for any purpose you wish,
+without warranty, and modify it if you require, subject to one condition:
+
+   "The above copyright notice and this permission notice shall be included in
+   all copies or substantial portions of the Software."
+
+In practice this means that whenever you distribute your application, whether as
+binary or as source code, you must include somewhere in your distribution the
+text in the file 'LICENSE'. This might be in the printed documentation, as a
+file on delivered media, or even on the credits / acknowledgements of the
+runtime application itself; any of those would satisfy the requirement.
+
+Even if the license doesn't require it, please consider to contribute your
+modifications back to the community.
