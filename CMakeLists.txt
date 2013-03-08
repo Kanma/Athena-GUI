@@ -60,8 +60,8 @@ else()
     set(ATHENA_GUI_SCRIPTING OFF)
 endif()
 
-# add_subdirectory(include)
-# add_subdirectory(src)
+add_subdirectory(include)
+add_subdirectory(src)
 
 if (DEFINED ATHENA_SCRIPTING_ENABLED AND ATHENA_SCRIPTING_ENABLED)
     add_subdirectory(scripting)
