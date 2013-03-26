@@ -5,10 +5,14 @@ configure_file(${ATHENA_GUI_SOURCE_DIR}/src/module.cpp.in
 # List the header files
 set(HEADERS ${XMAKE_BINARY_DIR}/include/Athena-GUI/Config.h
             ../include/Athena-GUI/Prerequisites.h
+            ../include/Athena-GUI/GUIManager.h
+            ../include/Athena-GUI/SystemInterface.h
 )
 
 # List the source files
 set(SRCS ${XMAKE_BINARY_DIR}/generated/Athena-GUI/module.cpp
+         GUIManager.cpp
+         SystemInterface.cpp
 )
 
 
@@ -19,6 +23,7 @@ set(INCLUDE_PATHS "${ATHENA_GUI_SOURCE_DIR}/include"
 include_directories(${INCLUDE_PATHS})
 
 xmake_import_search_paths(ATHENA_CORE)
+xmake_import_search_paths(ROCKETCORE)
 
 
 # Declaration of the library
@@ -29,7 +34,7 @@ xmake_create_dynamic_library(ATHENA_GUI Athena-GUI
 
 xmake_add_to_list_property(ATHENA_GUI COMPILE_DEFINITIONS "ATHENA_GUI_EXPORTS")
 
-xmake_project_link(ATHENA_GUI ATHENA_CORE)
+xmake_project_link(ATHENA_GUI ATHENA_CORE ROCKETCORE)
 
 
 # Disable some warnings in Visual Studio

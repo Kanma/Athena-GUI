@@ -34,6 +34,9 @@ namespace Athena
     //-----------------------------------------------------------------------------------
     namespace GUI
     {
+        class GUIManager;
+        class SystemInterface;
+
         ATHENA_GUI_SYMBOL extern const char* VERSION;
     }
 }
