@@ -16,3 +16,6 @@
 [submodule "dependencies/libRocket"]
 	path = dependencies/libRocket
 	url = git://github.com/Kanma/libRocket.git
+[submodule "dependencies/Ogre"]
+	path = dependencies/Ogre
+	url = https://github.com/Kanma/Ogre
